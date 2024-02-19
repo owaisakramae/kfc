@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KFC Pakistan | Deals & Offers</title>
+    <script>
+      let locals = localStorage.getItem("theme");
+
+      if (locals === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    </script>
+    <!--font-->
+    <script
+      src="https://c.webfontfree.com/c.js?f=Nationale-Medium"
+      type="text/javascript"
+    ></script>
+    <!--Bootstrap Css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!--Slick Slider-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="mt-100">
+      <nav class="py-2 main-header header-color fixed-top">
+        <div
+          class="container-xxl custom-container py-2 d-flex align-items-center justify-content-between"
+        >
+          <div class="d-flex align-items-center">
+            <button
+              class="burger-btn bg-transparent border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel"
+            >
+              <div class="side-cart">
+                <div class="d-flex justify-content-between">
+                  <a href="/login">
+                    <button
+                      class="btn-new align-items-center justify-content-center position-relative d-inline-flex text-uppercase"
+                    >
+                      Login
+                    </button>
+                  </a>
+                </div>
+                <div class="theme-color d-flex p-0" id="theme-switch">
+                  <button
+                    class="theme-button-dark align-items-center justify-content-center d-flex border-0"
+                  >
+                    Day
+                  </button>
+                  <button
+                    class="theme-button-light align-items-center justify-content-center d-flex border-0"
+                  >
+                    Night
+                  </button>
+                </div>
+                <ul class="side-menu mt-5 ps-0">
+                  <ul class="ps-0">
+                    <span class="sideba-bottom-order">.</span>
+                    <a href="">
+                      <li class="mt-1">
+                        <img
+                          src="./assets/Store-Locator.f6a5770e5b27f36c215d.jpg"
+                          alt=""
+                          class="sidebar-icons"
+                        />Store Locator
+                      </li>
+                    </a>
+                    <a href="">
+                      <li class="mt-1">
+                        <img
+                          src="./assets/Tracking-order.4b97000517b60dac1935.jpg"
+                          alt=""
+                          class="sidebar-icons"
+                        />Track Order
+                      </li>
+                    </a>
+                    <a href="./resources/menu.html">
+                      <li class="mt-1">
+                        <img
+                          src="./assets/Explore-menu.5a4a8ea8405b961694cb.jpg"
+                          alt=""
+                          class="sidebar-icons"
+                        />Explore Menu
+                      </li>
+                    </a>
+                  </ul>
+                  <ul class="ps-0">
+                    <span class="sideba-bottom-order">.</span>
+                    <a href=""><li class="mt-3">About Us</li></a>
+                    <a href=""><li class="mt-3">Feedback</li></a>
+                    <a href=""><li class="mt-3">Terms & Conditions</li></a>
+                    <a href=""><li class="mt-3">Privacy Policy</li></a>
+                    <a href=""><li class="mt-3">Contact Us</li></a>
+                    <a href=""><li class="mt-3">Mitao Bhook</li></a>
+                    <a href=""><li class="mt-3">Mitao Bhook-Scholarship</li></a>
+                    <a href=""><li class="mt-3">Careers</li></a>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+            <div class="header-login">
+              <a href="/">
+                <img src="./assets/download.png" alt="logo" />
+              </a>
+            </div>
+            <div class="order-through">
+              <div class="order-options d-flex">
+                <button
+                  class="order-option d-flex align-items-center border-0 text-uppercase order-active"
+                >
+                  <img
+                    class="p-0"
+                    src="./assets/Delivery.793adbaa710baf75ba78.png"
+                    alt="Delivery"
+                  />
+                  <span class="order-title">Delivery</span>
+                </button>
+                <button
+                  class="order-option d-flex align-items-center border-0 text-uppercase"
+                >
+                  <img
+                    class="p-0"
+                    src="./assets/pickup.47bb874f83ea6acb5a47.png"
+                    alt="pickup"
+                  />
+                  <span class="order-title">Pickup</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="item-card-header" id="cart" href="/bucket">
+              <div class="item-card-item">
+                <button
+                  class="fly-cart-btn align-items-center border-0 d-flex justify-content-center p-0"
+                >
+                  0
+                </button>
+              </div>
+            </div>
+            <div class="header-login">
+              <a href="/login">
+                <button
+                  class="btn-new align-items-center justify-content-center position-relative d-inline-flex text-uppercase"
+                >
+                  Login
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="product-list">
+        <div class="container">
+          <div class="row" id="productRow"></div>
+        </div>
+      </section>
+    </div>
+    <!--Slick Slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <!--Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom script-->
+    <script src="./script/script.js"></script>
+    <script>
+      // Function to fetch data from the API
+      async function fetchData() {
+        try {
+          const response = await fetch(
+            "http://127.0.0.1:5501/Api/product-kfc.json"
+          );
+          const data = await response.json();
+          return data;
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      }
+
+      // Function to create product cards
+      function createProductCards(data) {
+        const productRow = document.getElementById("productRow");
+
+        data.forEach((product) => {
+          const cardCol = document.createElement("div");
+          cardCol.className = "col-lg-3 col-md-4 col-sm-6";
+
+          const card = document.createElement("div");
+          card.className = "card";
+          card.style.width = "18rem";
+
+          const image = document.createElement("img");
+          image.className = "card-img-top";
+          image.src = product.image;
+          image.alt = "Card image cap";
+
+          const cardBody = document.createElement("div");
+          cardBody.className = "card-body";
+
+          const title = document.createElement("h5");
+          title.className = "card-title";
+          title.textContent = product.title;
+
+          const description = document.createElement("p");
+          description.className = "card-text";
+          description.textContent = product.description;
+
+          const price = document.createElement("p");
+          price.className = "card-text";
+          price.textContent = `Price: $${product.price}`;
+
+          const btn = document.createElement("a");
+          btn.href = "#";
+          btn.className = "btn btn-primary";
+          btn.textContent = "Add to Bucket";
+
+          // Append elements
+          cardBody.appendChild(title);
+          cardBody.appendChild(description);
+          cardBody.appendChild(price);
+          cardBody.appendChild(btn);
+
+          card.appendChild(image);
+          card.appendChild(cardBody);
+
+          cardCol.appendChild(card);
+          productRow.appendChild(cardCol);
+        });
+      }
+
+      // Fetch data and create product cards
+      fetchData().then((data) => createProductCards(data));
+    </script>
+  </body>
+</html>

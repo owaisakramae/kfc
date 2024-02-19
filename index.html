@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KFC Pakistan | Deals & Offers</title>
+    <script>
+      let locals = localStorage.getItem("theme");
+
+      if (locals === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    </script>
+    <!--font-->
+    <script
+      src="https://c.webfontfree.com/c.js?f=Nationale-Medium"
+      type="text/javascript"
+    ></script>
+    <!--Bootstrap Css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!--Slick Slider-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="mt-100">
+      <nav class="py-2 main-header header-color fixed-top">
+        <div
+          class="container-xxl custom-container py-2 d-flex align-items-center justify-content-between"
+        >
+          <div class="d-flex align-items-center">
+            <button
+              class="burger-btn bg-transparent border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel"
+            >
+              <div class="side-cart">
+                <div class="d-flex justify-content-between">
+                  <a href="/login">
+                    <button
+                      class="btn-new align-items-center justify-content-center position-relative d-inline-flex text-uppercase"
+                    >
+                      Login
+                    </button>
+                  </a>
+                </div>
+                <div class="theme-color d-flex p-0" id="theme-switch">
+                  <button
+                    class="theme-button-dark align-items-center justify-content-center d-flex border-0"
+                  >
+                    Day
+                  </button>
+                  <button
+                    class="theme-button-light align-items-center justify-content-center d-flex border-0"
+                  >
+                    Night
+                  </button>
+                </div>
+                <ul class="side-menu mt-5 ps-0">
+                  <ul class="ps-0">
+                    <span class="sideba-bottom-order">.</span>
+                    <a href="">
+                      <li class="mt-1">
+                        <img
+                          src="./assets/Store-Locator.f6a5770e5b27f36c215d.jpg"
+                          alt=""
+                          class="sidebar-icons"
+                        />Store Locator
+                      </li>
+                    </a>
+                    <a href="">
+                      <li class="mt-1">
+                        <img
+                          src="./assets/Tracking-order.4b97000517b60dac1935.jpg"
+                          alt=""
+                          class="sidebar-icons"
+                        />Track Order
+                      </li>
+                    </a>
+                    <a href="menu.html">
+                      <li class="mt-1">
+                        <img
+                          src="./assets/Explore-menu.5a4a8ea8405b961694cb.jpg"
+                          alt=""
+                          class="sidebar-icons"
+                        />Explore Menu
+                      </li>
+                    </a>
+                  </ul>
+                  <ul class="ps-0">
+                    <span class="sideba-bottom-order">.</span>
+                    <a href=""><li class="mt-3">About Us</li></a>
+                    <a href=""><li class="mt-3">Feedback</li></a>
+                    <a href=""><li class="mt-3">Terms & Conditions</li></a>
+                    <a href=""><li class="mt-3">Privacy Policy</li></a>
+                    <a href=""><li class="mt-3">Contact Us</li></a>
+                    <a href=""><li class="mt-3">Mitao Bhook</li></a>
+                    <a href=""><li class="mt-3">Mitao Bhook-Scholarship</li></a>
+                    <a href=""><li class="mt-3">Careers</li></a>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+            <div class="header-login">
+              <a href="/">
+                <img src="./assets/download.png" alt="logo" />
+              </a>
+            </div>
+            <div class="order-through">
+              <div class="order-options d-flex">
+                <button
+                  class="order-option d-flex align-items-center border-0 text-uppercase order-active"
+                >
+                  <img
+                    class="p-0"
+                    src="./assets/Delivery.793adbaa710baf75ba78.png"
+                    alt="Delivery"
+                  />
+                  <span class="order-title">Delivery</span>
+                </button>
+                <button
+                  class="order-option d-flex align-items-center border-0 text-uppercase"
+                >
+                  <img
+                    class="p-0"
+                    src="./assets/pickup.47bb874f83ea6acb5a47.png"
+                    alt="pickup"
+                  />
+                  <span class="order-title">Pickup</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="item-card-header" id="cart" href="/bucket">
+              <div class="item-card-item">
+                <button
+                  class="fly-cart-btn align-items-center border-0 d-flex justify-content-center p-0"
+                >
+                  0
+                </button>
+              </div>
+            </div>
+            <div class="header-login">
+              <a href="/login">
+                <button
+                  class="btn-new align-items-center justify-content-center position-relative d-inline-flex text-uppercase"
+                >
+                  Login
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="offer-banner">
+        <div class="container-fluid p-0">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2500">
+                <img src="./assets/carsouel-1.jpg" class="d-block w-100" />
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <img
+                  src="./assets/carsouel-2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="2500">
+                <img
+                  src="./assets/carsouel-3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./assets/carsouel-4.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev slick-prev slick-arrow"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next slick-arrow slick-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="text-center order-history">
+            <button
+              class="btn-new reorder-btn align-items-center justify-content-center position-relative d-inline-flex text-uppercase"
+            >
+              reorder
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="b-card-web">
+        <div class="container">
+          <div>
+            <h2 class="items-title position-relative text-uppercase">
+              Explore Menu
+            </h2>
+            <div class="browse-container">
+              <section class="slider-menu slider">
+                <div class="slide">
+                  <div
+                    class="browser-design d-flex align-items-center justify-content-center position-relative"
+                    tabindex="-1"
+                    style="width: 100%; display: inline-block"
+                  >
+                    <div class="brows-items">
+                      <a href="/menu"> <img src="./assets/1.png" alt="" /></a>
+                      <h6 class="details-design position-relative text-center">
+                        Everyday Value
+                      </h6>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div
+                    class="browser-design d-flex align-items-center justify-content-center position-relative"
+                    tabindex="-1"
+                    style="width: 100%; display: inline-block"
+                  >
+                    <div class="brows-items">
+                      <a href="/menu"> <img src="./assets/2.png" alt="" /></a>
+                      <h6 class="details-design position-relative text-center">
+                        Ala-Carte-&-Combos
+                      </h6>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div
+                    class="browser-design d-flex align-items-center justify-content-center position-relative"
+                    tabindex="-1"
+                    style="width: 100%; display: inline-block"
+                  >
+                    <div class="brows-items">
+                      <a href="/menu"> <img src="./assets/3.png" alt="" /></a>
+                      <h6 class="details-design position-relative text-center">
+                        Promotion
+                      </h6>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div
+                    class="browser-design d-flex align-items-center justify-content-center position-relative"
+                    tabindex="-1"
+                    style="width: 100%; display: inline-block"
+                  >
+                    <div class="brows-items">
+                      <a href="/menu"> <img src="./assets/4.png" alt="" /></a>
+                      <h6 class="details-design position-relative text-center">
+                        Signature-Boxes
+                      </h6>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div
+                    class="browser-design d-flex align-items-center justify-content-center position-relative"
+                    tabindex="-1"
+                    style="width: 100%; display: inline-block"
+                  >
+                    <div class="brows-items">
+                      <a href="/menu"> <img src="./assets/5.png" alt="" /></a>
+                      <h6 class="details-design position-relative text-center">
+                        Sharing
+                      </h6>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div
+                    class="browser-design d-flex align-items-center justify-content-center position-relative"
+                    tabindex="-1"
+                    style="width: 100%; display: inline-block"
+                  >
+                    <div class="brows-items">
+                      <a href="/menu"> <img src="./assets/6.png" alt="" /></a>
+                      <h6 class="details-design position-relative text-center">
+                        Snacks-&-Beverages
+                      </h6>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div
+                    class="browser-design d-flex align-items-center justify-content-center position-relative"
+                    tabindex="-1"
+                    style="width: 100%; display: inline-block"
+                  >
+                    <div class="brows-items">
+                      <a href="/menu"> <img src="./assets/7.png" alt="" /></a>
+                      <h6 class="details-design position-relative text-center">
+                        Midnight (Start at 12 am)
+                      </h6>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="items-title position-relative text-uppercase">
+          <span>Best Sellers</span>
+        </h2>
+        <div class="best-seller mt-4 d-flex">
+          <div class="best-seller-img d-flex align-items-end position-relative">
+            <div class="kfc-box d-flex position-absolute">
+              <span></span><span></span><span></span>
+            </div>
+            <span
+              class="ribbon ribbon-two d-inline-block position-absolute text-center"
+            >
+              <span class="d-flex align-items-end"
+                ><h5 class="rs-title mb-0">Rs</h5>
+                <h5 class="mb-0 pkr-title">270</h5>
+              </span>
+            </span>
+            <h6 class="position-absolute">Krunch Burger</h6>
+            <img
+              class="bestseller-container"
+              src="./assets/43a9fb50-ffaa-11ed-8180-812e571998fe-krunch_variant_0-2023-05-31115706.png"
+              alt=""
+            />
+          </div>
+          <div class="best-seller-img d-flex align-items-end position-relative">
+            <div class="kfc-box d-flex position-absolute">
+              <span></span><span></span><span></span>
+            </div>
+            <span
+              class="ribbon ribbon-two d-inline-block position-absolute text-center"
+            >
+              <span class="d-flex align-items-end"
+                ><h5 class="rs-title mb-0">Rs</h5>
+                <h5 class="mb-0 pkr-title">700</h5>
+              </span>
+            </span>
+            <h6 class="position-absolute">Mighty Zinger</h6>
+            <img
+              class="bestseller-container"
+              src="./assets/33685b40-0461-11ee-911c-497570899609-Mighty_variant_0-2023-06-06115641.png"
+              alt=""
+            />
+          </div>
+          <div class="best-seller-img d-flex align-items-end position-relative">
+            <div class="kfc-box d-flex position-absolute">
+              <span></span><span></span><span></span>
+            </div>
+            <span
+              class="ribbon ribbon-two d-inline-block position-absolute text-center"
+            >
+              <span class="d-flex align-items-end"
+                ><h5 class="rs-title mb-0">Rs</h5>
+                <h5 class="mb-0 pkr-title">610</h5>
+              </span>
+            </span>
+            <h6 class="position-absolute">Hot Wings Bucket</h6>
+            <img
+              class="bestseller-container"
+              src="./assets/43a9fb50-ffaa-11ed-8180-812e571998fe-HotWings_variant_0-2023-05-31115706.png"
+              alt=""
+            />
+          </div>
+          <div class="best-seller-img d-flex align-items-end position-relative">
+            <div class="kfc-box d-flex position-absolute">
+              <span></span><span></span><span></span>
+            </div>
+            <span
+              class="ribbon ribbon-two d-inline-block position-absolute text-center"
+            >
+              <span class="d-flex align-items-end"
+                ><h5 class="rs-title mb-0">Rs</h5>
+                <h5 class="mb-0 pkr-title">520</h5>
+              </span>
+            </span>
+            <h6 class="position-absolute">Krunch Combo</h6>
+            <img
+              class="bestseller-container"
+              src="./assets/43a9fb50-ffaa-11ed-8180-812e571998fe-crunch-with-fries-and-drink-2023-05-31115706.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5">
+        <h2 class="items-title position-relative text-uppercase">
+          <span>Top deals</span>
+        </h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-6">
+            <div>
+              <div class="card menu-card">
+                <div class="kfc-box d-flex position-absolute">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="manu-img-item">
+                  <img class="card-img" src="./assets/card-1.png" alt="" />
+                </div>
+                <div class="card-body p-0">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="card-title">Crispy Duo Box</h5>
+                    <span
+                      ><div>
+                        <button class="btn-item position-absolute border-0">
+                          <i class="fa-regular fa-heart"></i>
+                        </button></div
+                    ></span>
+                  </div>
+                  <p class="card-text">
+                    Turn up the fun with 5 pcs Hot &amp; Crispy Chicken + 1
+                    Large fries + 2 Regular drinks
+                  </p>
+                  <h4 class="kfc-price">Rs 1250</h4>
+                  <div class="price-label">
+                    <div>
+                      <button
+                        class="fa-solid fa-plus rgeister-btn Add-web px-2 align-items-center d-flex text-uppercase"
+                      >
+                        <span>Add to bucket</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div>
+              <div class="card menu-card">
+                <div class="kfc-box d-flex position-absolute">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="manu-img-item">
+                  <img class="card-img" src="./assets/card-2.png" alt="" />
+                </div>
+                <div class="card-body p-0">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="card-title">Zinger Stacker Combo</h5>
+                    <span
+                      ><div>
+                        <button class="btn-item position-absolute border-0">
+                          <i class="fa-regular fa-heart"></i>
+                        </button></div
+                    ></span>
+                  </div>
+                  <p class="card-text">
+                    1 Zinger Stacker + 1 Regular fries + 1 Regular drink
+                  </p>
+                  <h4 class="kfc-price">Rs 1250</h4>
+                  <div class="price-label">
+                    <div>
+                      <button
+                        class="fa-solid fa-plus rgeister-btn Add-web px-2 align-items-center d-flex text-uppercase"
+                      >
+                        <span>Add to bucket</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div>
+              <div class="card menu-card">
+                <div class="kfc-box d-flex position-absolute">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="manu-img-item">
+                  <img class="card-img" src="./assets/card-3.png" alt="" />
+                </div>
+                <div class="card-body p-0">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="card-title">Twister Combo</h5>
+                    <span
+                      ><div>
+                        <button class="btn-item position-absolute border-0">
+                          <i class="fa-regular fa-heart"></i>
+                        </button></div
+                    ></span>
+                  </div>
+                  <p class="card-text">
+                    Twister + 1 Regular fries + 1 Regular drink
+                  </p>
+                  <h4 class="kfc-price">Rs 1250</h4>
+                  <div class="price-label">
+                    <div>
+                      <button
+                        class="fa-solid fa-plus rgeister-btn Add-web px-2 align-items-center d-flex text-uppercase"
+                      >
+                        <span>Add to bucket</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div>
+              <div class="card menu-card">
+                <div class="kfc-box d-flex position-absolute">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="manu-img-item">
+                  <img class="card-img" src="./assets/card-4.png" alt="" />
+                </div>
+                <div class="card-body p-0">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="card-title">Family Festival 3</h5>
+                    <span
+                      ><div>
+                        <button class="btn-item position-absolute border-0">
+                          <i class="fa-regular fa-heart"></i>
+                        </button></div
+                    ></span>
+                  </div>
+                  <p class="card-text">
+                    An ultimate meal for the fam. It includes 4 Zinger burgers +
+                    4 pieces Hot and Crispy Chicken + 2 Dinner rolls + 1.5 Liter
+                    drink
+                  </p>
+                  <h4 class="kfc-price">Rs 1250</h4>
+                  <div class="price-label">
+                    <div>
+                      <button
+                        class="fa-solid fa-plus rgeister-btn Add-web px-2 align-items-center d-flex text-uppercase"
+                      >
+                        <span>Add to bucket</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mt-4">
+            <a href="/menu">
+              <img
+                class="w-100 img-border"
+                src="./assets/pickup-banner.01fde5a7db5ef06f7bce.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-md-6 mt-4">
+            <a href="#">
+              <img
+                class="w-100 img-border"
+                src="./assets/favorites-banner.afff26bc6d0127f68baa.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mt-4">
+            <a href="">
+              <img
+                src="./assets/scamOrdr.6f809bf83912dd8dbe31.jpg"
+                alt=""
+                class="w-100 img-border"
+              />
+            </a>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="kfc-basket align-items-center d-flex text-center">
+              <img src="./assets/kfc-meal.afc417f5d19998efd26b.png" alt="" />
+              <h5>
+                Adding 11 herbs and spices, Explore our menu and add items to
+                your cart.
+              </h5>
+              <a href="/menu">
+                <button class="text-uppercase border-0">Explore Menu</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="container">
+          <div
+            class="social-container d-flex align-items-center justify-content-center"
+          >
+            <a href="#"><img src="./assets/download(1).png" alt="" /></a>
+            <div class="footer-line"></div>
+            <div>
+              <div class="social-icons">
+                <a href="">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <ul class="footer-info">
+                <a href=""><li>About Us</li></a>
+                <a href=""><li>Mitao Bhook</li></a>
+                <a href=""><li>Mitao Bhook - Scholarship</li></a>
+                <a href=""><li>Privacy Policy</li></a>
+                <a href=""><li>Careers</li></a>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="footer-info">
+                <a href=""><li>Contact Us</li></a>
+                <a href=""><li>Store Locator</li></a>
+                <a href=""><li>Track Order</li></a>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="footer-info">
+                <a href="">
+                  <li>Terms & Conditions</li>
+                </a>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <div class="app-kfc">
+                <a href="">
+                  <img
+                    src="./assets/appstore.png"
+                    alt="appstore"
+                    class="mt-3"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="./assets/googleplay.png"
+                    alt="PlayStore"
+                    class="mt-3"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center mt-2">
+              <h6 class="m-0">2023 KFC. All rights reserved</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Slick Slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <!--Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom script-->
+    <script src="./script/script.js"></script>
+  </body>
+</html>
