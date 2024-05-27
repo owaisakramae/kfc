@@ -31,3 +31,21 @@ To get a local copy up and running, follow these simple steps:
 1. **Clone the repository**:
    ```sh
    git clone https://github.com/your-username/kfc-frontend-clone.git
+
+kfc-frontend-clone/
+├── index.html
+├── menu.html
+├── order.html
+├── contact.html
+├── css/
+│   ├── styles.css
+│   ├── responsive.css
+├── js/
+│   ├── main.js
+│   ├── menu.js
+│   ├── order.js
+├── images/
+│   ├── logo.png
+│   ├── banner.jpg
+│   ├── menu-items/
+│   ├── ...
