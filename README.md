@@ -7,9 +7,7 @@ This repository contains the code for a clone of the KFC website's frontend, cre
 - **Responsive Design**: Ensures the website looks great on all devices, from desktops to mobile phones.
 - **Navigation Bar**: A fully functional navigation bar that includes links to various sections of the site.
 - **Home Page**: A visually appealing home page with promotional banners, featured items, and special offers.
-- **Menu Page**: A detailed menu page that lists all the available items with images, descriptions, and prices.
-- **Order Page**: An order page that allows users to select items, customize their orders, and add them to the cart.
-- **Contact Page**: A contact page with a form for users to submit inquiries or feedback.
+
 - **Animations and Transitions**: Smooth animations and transitions to enhance user experience.
 
 ## Technologies Used
@@ -19,8 +17,6 @@ This repository contains the code for a clone of the KFC website's frontend, cre
   - **Flexbox**: Used for flexible and responsive layouts.
   - **Grid**: Employed for complex layout arrangements.
 - **JavaScript**: For adding interactivity to the website.
-  - **Vanilla JavaScript**: Used for DOM manipulation, event handling, and dynamic content.
-  - **ES6**: Leveraged modern JavaScript features for cleaner and more efficient code.
 - **Responsive Web Design**: Implemented to ensure the website is usable on all device sizes.
 - **Font Awesome**: Integrated for icons to enhance the visual appearance of the site.
 
@@ -30,22 +26,19 @@ To get a local copy up and running, follow these simple steps:
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/your-username/kfc-frontend-clone.git
+   git clone https://github.com/rowaisakram/kfc.git
+2. **Navigate to the project directory**:
+   ```sh
+   cd kfc-frontend-clone
+3. **Open index.html in your preferred web browser to see the website in action.**
 
-kfc-frontend-clone/
-├── index.html
-├── menu.html
-├── order.html
-├── contact.html
-├── css/
-│   ├── styles.css
-│   ├── responsive.css
-├── js/
-│   ├── main.js
-│   ├── menu.js
-│   ├── order.js
-├── images/
-│   ├── logo.png
-│   ├── banner.jpg
-│   ├── menu-items/
-│   ├── ...
+## Contributing
+Contributions are welcome! If you have any ideas for improvements or have found any bugs, feel free to open an issue or submit a pull request.
+
+## Disclaimer
+
+This project is intended for educational purposes only. The design and layout are based on the KFC website, which is owned by KFC Corporation. This project is not affiliated with, sponsored, or endorsed by KFC Corporation.
+
+
+  
+
